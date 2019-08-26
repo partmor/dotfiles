@@ -67,3 +67,8 @@ let g:NERDTreeMapPreview="<F4>"
 
 set laststatus=2
 
+" to make the backspace work like in most other programs (by default you can
+" only delete in insert mode what you have written during THAT insert; if you
+" really want to delete you must go on normal mode and delete with x for
+" instance).
+set backspace=indent,eol,start
