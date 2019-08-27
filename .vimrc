@@ -72,3 +72,7 @@ set laststatus=2
 " really want to delete you must go on normal mode and delete with x for
 " instance).
 set backspace=indent,eol,start
+
+" yanked content becomes available to system clipboard! yank in vim and paset
+" with cmd+v!
+set clipboard=unnamed
