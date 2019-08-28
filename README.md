@@ -21,7 +21,7 @@ For Vim to correctly use the the configuration in `.vimrc`, you need to install 
 # clone Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# install plugins (without "opening" vim)
+# install plugins (without "opening" vim) - AFTER creating the .vimrc link at ~/
 vim +PluginInstall +qall > /dev/null
 ```
 ### Tmux
