@@ -1,0 +1,12 @@
+alias ll='ls -alh'
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias ifgrep='fgrep -i'
+
+alias greps='grep -rnw "." -e'
+alias fgreps='fgrep -rnw "." -e'
+alias ifgreps='fgrep -irnw "." -e'
+
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate"
