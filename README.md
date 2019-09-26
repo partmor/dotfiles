@@ -7,8 +7,8 @@ To have synced dotfiles, clone this repo in your homedir (`~/`) and run the `lin
 # clone
 git clone https://github.com/partmor/dotfiles.git ~/dotfiles
 
-# create symbolic links
-bash ~/dotfiles/link-dotfiles.sh .vimrc .tmux.conf
+# create symbolic links in your home directory
+bash ~/dotfiles/link-dotfiles.sh .vimrc .tmux.conf .custom_bashrc
 ```
 
 ## Prerequisites & Comments
@@ -27,3 +27,15 @@ vim +PluginInstall +qall > /dev/null
 ### Tmux
 
 No additional steps are required to effectively load `.tmux.conf`.
+
+### Bash aliases
+
+After creating the simbolic link for `.custom_bashrc`, source it in your `rc` file.
+
+```
+# if you use bash:
+echo "source ~/.custom_bashrc" >> ~/.bashrc
+
+# if you use zsh:
+echo "source ~/.custom_bashrc" >> ~/.zshrc 
+```
