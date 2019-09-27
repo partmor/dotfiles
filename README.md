@@ -13,9 +13,9 @@ bash ~/dotfiles/link-dotfiles.sh .vimrc .tmux.conf .custom_bashrc
 
 ## Prerequisites & Comments
 
-### Vim 
+### Vim ([`.vimrc`](.vimrc))
 
-For Vim to correctly use the the configuration in `.vimrc`, you need to install [Vundle](https://github.com/VundleVim/Vundle.vim) and the pluggins in the `.vimrc`:
+For Vim to correctly use the the configuration in `.vimrc`, you need to install [Vundle](https://github.com/VundleVim/Vundle.vim) and the pluggins specified in the `.vimrc`:
 
 ```
 # clone Vundle
@@ -24,11 +24,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # install plugins (without "opening" vim) - AFTER creating the .vimrc link at ~/
 vim +PluginInstall +qall > /dev/null
 ```
-### Tmux
+### Tmux ([`.tmux.conf`](.tmux.conf))
 
 No additional steps are required to effectively load `.tmux.conf`.
 
-### Bash aliases
+### Bash aliases ([`.custom_bashrc`](.custom_bashrc))
 
 After creating the simbolic link for `.custom_bashrc`, source it in your `rc` file.
 
