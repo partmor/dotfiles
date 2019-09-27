@@ -15,7 +15,7 @@ backup_and_link () {
                 mv ~/${file} ~/${backup}
                 echo "Backup created: ${backup}"
         fi
-        echo "Creting symbolic link at ~/${file}"
+        echo "Creating symbolic link at ~/${file}"
         ln -s ~/dotfiles/$file ~/${file}
 }
 # you need to export -f the function to be able to use it in xargs;
