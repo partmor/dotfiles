@@ -21,10 +21,10 @@ For Vim to correctly use the the configuration in `.vimrc`, you need to install 
 # clone Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# get powerline fonts (optional)
+# get powerline fonts (recommended)
 sudo apt-get install fonts-powerline
 
-# install plugins (without "opening" vim) - AFTER creating the .vimrc link at ~/
+# install plugins (without opening vim editor) - AFTER creating the .vimrc link at ~/
 vim +PluginInstall +qall > /dev/null
 ```
 ### Tmux ([`.tmux.conf`](.tmux.conf))
