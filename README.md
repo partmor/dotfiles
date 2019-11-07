@@ -42,3 +42,7 @@ echo "source ~/.custom_bashrc" >> ~/.bashrc
 # if you use zsh:
 echo "source ~/.custom_bashrc" >> ~/.zshrc 
 ```
+
+## Useful resources
+
++ [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
