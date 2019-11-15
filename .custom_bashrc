@@ -1,4 +1,4 @@
-alias ll='ls -alh'
+alias ll='ls -lh'
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
