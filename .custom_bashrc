@@ -10,3 +10,5 @@ alias fgreps='fgrep -rnw "." -e'
 alias ifgreps='fgrep -irnw "." -e'
 
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate"
+
+alias duls='du -shc `ls`'
