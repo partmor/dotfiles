@@ -1,4 +1,10 @@
 alias ll='ls -lh'
+alias duls='du -shc `ls`'
+
+
+############
+# grepping #
+############
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -9,6 +15,16 @@ alias greps='grep -rnw "." -e'
 alias fgreps='fgrep -rnw "." -e'
 alias ifgreps='fgrep -irnw "." -e'
 
+
+#######
+# git #
+#######
+
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate"
 
-alias duls='du -shc `ls`'
+
+##########
+# docker #
+##########
+
+alias drmif-none='docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)'
