@@ -27,4 +27,4 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 # docker #
 ##########
 
-alias drmif-none='docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)'
+alias docker-clean-nones='docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)'
