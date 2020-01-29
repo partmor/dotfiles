@@ -1,4 +1,6 @@
 alias ll='ls -lh'
+
+# human-readable size of dirs/files in cwd
 alias duls='du -shc `ls`'
 
 
@@ -11,6 +13,7 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias ifgrep='fgrep -i'
 
+# grep into files in current directory
 alias greps='grep -rnw "." -e'
 alias fgreps='fgrep -rnw "." -e'
 alias ifgreps='fgrep -irnw "." -e'
@@ -27,4 +30,16 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 # docker #
 ##########
 
+# clean "none" images
 alias docker-clean-nones='docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)'
+
+
+#############
+# archiving #
+#############
+
+# compress
+alias tarc="tar -czvf"
+
+# extract
+alias tarx="tar -xzvf"
