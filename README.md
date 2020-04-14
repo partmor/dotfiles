@@ -22,7 +22,11 @@ For Vim to correctly use the the configuration in `.vimrc`, you need to install 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # get powerline fonts (recommended)
+# in linux:
 sudo apt-get install fonts-powerline
+# in macOS follow the generic (clone and install.sh) steps from
+# https://github.com/powerline/fonts#quick-installation, and then go to:
+# iTerm > Preferences > Profiles > Text and select ubuntu mono for instance
 
 # install plugins (without opening vim editor) - AFTER creating the .vimrc link at ~/
 vim +PluginInstall +qall > /dev/null
