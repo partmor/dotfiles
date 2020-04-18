@@ -47,6 +47,15 @@ echo "source ~/.custom_bashrc" >> ~/.bashrc
 echo "source ~/.custom_bashrc" >> ~/.zshrc 
 ```
 
+## Other settings
+
+### Git
+
++ Prevent `git` from using `less` if content is less than one screen:
+  ```
+  $ git config --global --replace-all core.pager "less -F -X"
+  ```
+
 ## Useful resources
 
 + [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
