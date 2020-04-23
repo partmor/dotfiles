@@ -55,6 +55,10 @@ echo "source ~/.custom_bashrc" >> ~/.zshrc
   ```
   $ git config --global --replace-all core.pager "less -F -X"
   ```
++ Set `vim` as default editor (for rebasing, commit messages, etc.):
+  ```
+  $ git config --global core.editor "vim"
+  ```
 
 ## Useful resources
 
