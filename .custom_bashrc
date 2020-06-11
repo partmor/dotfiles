@@ -33,6 +33,10 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 # clean "none" images
 alias docker-clean-nones='docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)'
 
+# kill all running containers
+# this is usefull want to interrupt a running a container and SIGINT (ctrl-C) doesn't help you
+alias docker-kill-all-containers='docker kill $(docker ps -q)'
+
 
 #############
 # archiving #
