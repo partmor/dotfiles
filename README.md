@@ -60,6 +60,11 @@ $ echo "source ~/.custom_bashrc" >> ~/.zshrc
   $ git config --global core.editor "vim"
   ```
 
+### OhMyZsh
+
++ My favourite theme: `ZSH_THEME="gentoo"`
++ To have `gcloud` SDK autocomplete, add `gcloud` to plugins: `plugins=(git gcloud)`
+
 ## Useful resources
 
 + [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
