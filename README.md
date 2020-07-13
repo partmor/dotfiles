@@ -15,18 +15,25 @@ $ bash ~/dotfiles/link-dotfiles.sh .vimrc .tmux.conf .custom_bashrc
 
 ### Vim ([`.vimrc`](.vimrc))
 
-For Vim to correctly use the the configuration in `.vimrc`, you need to install [Vundle](https://github.com/VundleVim/Vundle.vim) and the pluggins specified in the `.vimrc`:
+For Vim to correctly use the the configuration in `.vimrc`, you need to install [Vundle](https://github.com/VundleVim/Vundle.vim) and the pluggins specified in the `.vimrc`.
+
+As a prerequisite I recommend installing Powerline fonts:
+```
+# in linux:
+$ sudo apt-get install fonts-powerline
+
+# in macOS:
+$ brew install python
+$ brew install macvim
+# then follow the generic (clone and install.sh) steps from https://github.com/powerline/fonts#quick-installation
+# finally: iTerm > Preferences > Profiles > Text and select ubuntu mono for instance
+```
+
+Now install Vundle and plugins:
 
 ```
 # clone Vundle
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-# get powerline fonts (recommended)
-# in linux:
-$ sudo apt-get install fonts-powerline
-# in macOS follow the generic (clone and install.sh) steps from
-# https://github.com/powerline/fonts#quick-installation, and then go to:
-# iTerm > Preferences > Profiles > Text and select ubuntu mono for instance
 
 # install plugins (without opening vim editor) - AFTER creating the .vimrc link at ~/
 $ vim +PluginInstall +qall > /dev/null
@@ -64,6 +71,10 @@ $ echo "source ~/.custom_bashrc" >> ~/.zshrc
 
 + My favourite theme: `ZSH_THEME="gentoo"`
 + To have `gcloud` SDK autocomplete, add `gcloud` to plugins: `plugins=(git gcloud)`
+
+### iTerm2
+
++ For Ubuntu-like terminal color scheme, I use `gentoo` OhMyZsh theme with iTerm background hex `421a47`.
 
 ## Useful resources
 
