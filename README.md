@@ -76,6 +76,15 @@ $ echo "source ~/.custom_bashrc" >> ~/.zshrc
 
 + For Ubuntu-like terminal color scheme, I use `gentoo` OhMyZsh theme with iTerm background hex `421a47`.
 
+### GNU utilities (for Mac)
+
+```
+$ brew install coreutils findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep
+```
+
+The GNU commands will be prepended with a `g`. E.g. if you want to use GNU's `xargs` instead of Mac's, use `gxargs`.
+For more info, see this [SO question](https://apple.stackexchange.com/questions/69223/how-to-replace-mac-os-x-utilities-with-gnu-core-utilities).
+
 ## Useful resources
 
 + [tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
