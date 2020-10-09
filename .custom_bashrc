@@ -24,7 +24,7 @@ alias ifgreps='fgrep -irnw "." -e'
 #######
 
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate"
-alias git-personal="git config user.name partmor && git config user.email part.morales@gmail.com"
+alias gitpersonal="git config user.name partmor && git config user.email part.morales@gmail.com && git config user.name && git config user.email"
 
 
 ##########
