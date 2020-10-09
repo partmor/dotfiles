@@ -24,8 +24,12 @@ alias ifgreps='fgrep -irnw "." -e'
 #######
 
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate"
-alias gitas="echo Git As: `git config user.name` - `git config user.email`"
-alias gitset="git config user.name partmor && git config user.email part.morales@gmail.com && echo Set Git User: `git config user.name` - `git config user.email`"
+gitas() {
+   echo Git As: `git config user.name` - `git config user.email`
+}
+gitset() {
+   git config user.name partmor && git config user.email part.morales@gmail.com && echo Set Git User: `git config user.name` - `git config user.email`
+}
 
 
 ##########
