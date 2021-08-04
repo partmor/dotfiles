@@ -67,6 +67,21 @@ $ echo "source ~/.custom_bashrc" >> ~/.zshrc
   $ git config --global core.editor "vim"
   ```
 
+### [lazygit](https://github.com/jesseduffield/lazygit)
+
+Great terminal UI for git commands.
+
++ [Installation instructions](https://github.com/jesseduffield/lazygit#installation)
++ Alias to `lg` for easy usage.
++ Keybindings [reference](https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Keybindings_en.md).
+
+### [lazydocker](https://github.com/jesseduffield/lazydocker)
+
+Great terminal UI for Docker management. By the same guy that created `lazygit`.
+
++ [Installation instructions](https://github.com/jesseduffield/lazydocker#installation)
++ Alias to `lzd` for easy usage.
+
 ### OhMyZsh
 
 + My favourite theme: `ZSH_THEME="gentoo"`

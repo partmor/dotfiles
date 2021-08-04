@@ -31,6 +31,8 @@ gitset() {
    git config user.name partmor && git config user.email part.morales@gmail.com && echo Set Git User: `git config user.name` - `git config user.email`
 }
 
+alias lg="lazygit"
+
 
 ##########
 # docker #
@@ -42,6 +44,8 @@ alias docker-clean-nones='docker rmi -f $(docker images --filter "dangling=true"
 # kill all running containers
 # this is usefull want to interrupt a running a container and SIGINT (ctrl-C) doesn't help you
 alias docker-kill-all-containers='docker kill $(docker ps -q)'
+
+alias lzd="lazydocker"
 
 
 #############
