@@ -41,6 +41,9 @@ alias lg="lazygit"
 # clean "none" images
 alias docker-clean-nones='docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)'
 
+# clean volumes
+alias docker-clean-volumes='docker volume rm -f $(docker volume ls --filter dangling=true -q)'
+
 # kill all running containers
 # this is usefull want to interrupt a running a container and SIGINT (ctrl-C) doesn't help you
 alias docker-kill-all-containers='docker kill $(docker ps -q)'
