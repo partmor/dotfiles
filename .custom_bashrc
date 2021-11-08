@@ -62,6 +62,17 @@ alias tarc="tar -czvf"
 alias tarx="tar -xzvf"
 
 
+#######
+# gcp #
+#######
+
+# get list of profiles/configs (the setups created with gcloud init)
+alias gcls="gcloud config configurations list"
+
+# activate one of the profiles from `gcls`
+alias gcinit="gcloud config configurations activate"
+
+
 ########
 # misc #
 ########
