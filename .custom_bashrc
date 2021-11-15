@@ -72,6 +72,9 @@ alias gcls="gcloud config configurations list"
 # activate one of the profiles from `gcls`
 alias gcinit="gcloud config configurations activate"
 
+# for authenticated calls to a cloud run service
+alias gcurl='curl --header "Authorization: Bearer $(gcloud auth print-identity-token)"'
+
 
 ########
 # misc #
